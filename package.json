@@ -13,6 +13,7 @@
     "watch": "watch npm\\ run\\ build ./src",
     "test-watch": "jest --watch",
     "lint": "standard \"src/**/*.js\"",
+    "install": "npm install",
     "postinstall": "npm run build"
   },
   "keywords": [
