@@ -12,7 +12,8 @@ export default class LinkedIn extends React.Component {
     callback: React.PropTypes.func.isRequired,
     className: React.PropTypes.string,
     text: React.PropTypes.node,
-    scope: React.PropTypes.arrayOf(React.PropTypes.string)
+    scope: React.PropTypes.arrayOf(React.PropTypes.string),
+    icon: React.prototype.any
   }
 
   componentDidMount () {
@@ -43,10 +44,24 @@ export default class LinkedIn extends React.Component {
   }
 
   render () {
+    const {icon} = this.props;
+    const isIconString = typeof icon === 'string';
     return (
-      <button className={this.props.className} onTouchTap={this.start}>
-        {this.props.text}
-      </button>
+      <span>
+          {isIconString && (
+              <link
+                  rel="stylesheet"
+                  href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+              />
+          )}
+          <button className={this.props.className} onTouchTap={this.start}>
+              {icon && isIconString && (
+                  <i className={`fa ${icon}`}></i>
+              )}
+              {icon && !isIconString && icon}
+            {this.props.text}
+          </button>
+      </span>
     )
   }
 
