@@ -3,8 +3,8 @@
   "version": "1.0.2",
   "description": "React LinkedIn Login button",
   "main": "./lib",
-  "repository": "https://github.com/orionsoft/react-linkedin-login",
-  "author": "nicolaslopezj",
+  "repository": "https://github.com/AdrGeorgescu/react-linkedin-login.git",
+  "author": "adriangeorgescu",
   "license": "MIT",
   "scripts": {
     "build": "babel ./src --out-dir ./lib",
