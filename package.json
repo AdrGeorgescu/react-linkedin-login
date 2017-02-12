@@ -12,7 +12,8 @@
     "test": "npm run lint && jest",
     "watch": "watch npm\\ run\\ build ./src",
     "test-watch": "jest --watch",
-    "lint": "standard \"src/**/*.js\""
+    "lint": "standard \"src/**/*.js\"",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "accounts",
