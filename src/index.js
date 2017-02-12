@@ -13,7 +13,7 @@ export default class LinkedIn extends React.Component {
     className: React.PropTypes.string,
     text: React.PropTypes.node,
     scope: React.PropTypes.arrayOf(React.PropTypes.string),
-    icon: React.prototype.any
+    icon: React.PropTypes.any
   }
 
   componentDidMount () {
